@@ -10,7 +10,6 @@
 
 # production
 /build
-assets
 
 # misc
 .DS_Store
@@ -18,6 +17,7 @@ assets
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
