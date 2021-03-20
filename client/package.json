@@ -19,7 +19,7 @@
     "build:twilio": "react-scripts build && mv build/* ../server/assets",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "delete-assets": "del ../server/assets/**/*.* --force"
+    "delete-assets": "del ../server/assets/**/* --force"
   },
   "eslintConfig": {
     "extends": [
