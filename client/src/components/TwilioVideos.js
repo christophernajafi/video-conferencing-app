@@ -12,14 +12,14 @@ function TwilioVideos({ token, room }) {
     remoteVideoRef.current.appendChild(chat);
   }
   useEffect(() => {
-    console.log("Trying to connect to Twilio with token", token);
+    // console.log("Trying to connect to Twilio with token", token);
     TwilioVideo.connect(token, {
       video: true,
       audio: true,
       name: room,
     })
       .then((room) => {
-        console.log("connected to Twilio");
+        // console.log("Connected to Twilio");
         TwilioVideo.createLocalVideoTrack().then((track) => {
           localVideoRef.current.appendChild(track.attach());
         });

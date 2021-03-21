@@ -4,9 +4,9 @@ import SignIn from "./components/SignIn";
 import TwilioVideos from "./components/TwilioVideos";
 
 function App() {
-  const [token, setToken] = useState();
-  const [name, setName] = useState();
-  const [room, setRoom] = useState();
+  const [token, setToken] = useState("");
+  const [name, setName] = useState("");
+  const [room, setRoom] = useState("");
 
   return (
     <div className="App">

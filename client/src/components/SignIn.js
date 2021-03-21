@@ -13,7 +13,7 @@ function SignIn({ setToken, setName, setRoom, name, room }) {
         room: room,
       });
       setToken(result.data);
-      console.log("Got the token with value: ", result.data);
+      // console.log("Got the token with value: ", result.data);
     } catch (error) {
       console.log(error);
     }
