@@ -6,7 +6,7 @@ import TwilioVideos from "./components/TwilioVideos";
 function App() {
   const [token, setToken] = useState();
   const [name, setName] = useState();
-  const [room, setRoom] = useState("room");
+  const [room, setRoom] = useState();
 
   return (
     <div className="App">

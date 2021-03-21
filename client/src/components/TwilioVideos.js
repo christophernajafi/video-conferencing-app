@@ -56,7 +56,7 @@ function TwilioVideos({ token, room }) {
 
   return (
     <div>
-      <h1>Your are in room: {room}</h1>
+      <h1>You are in {room}</h1>
       <div ref={localVideoRef}></div>
       <div ref={remoteVideoRef}></div>
     </div>

@@ -21,26 +21,41 @@ function SignIn({ setToken, setName, setRoom, name, room }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">
-        Name
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-      </label>
-      <label htmlFor="room">
-        Room
-        <input
-          type="text"
-          id="room"
-          value={room}
-          onChange={(e) => setRoom(e.target.value)}
-        />
-      </label>
+      <h3>Welcome to Chris's Video Conferencing App!</h3>
+
+      <div className="form-group">
+        <label htmlFor="name">
+          {/* Your Name */}
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Your Name"
+          />
+        </label>
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="room">
+          {/* Room Name */}
+          <input
+            type="text"
+            id="room"
+            value={room}
+            onChange={(e) => setRoom(e.target.value)}
+            placeholder="Room Name"
+          />
+        </label>
+      </div>
       <br />
-      <button type="submit">Join the chat</button>
+      <button
+        type="submit"
+        className="btn btn-primary btn-block"
+        disabled={!name && !room}
+      >
+        JOIN
+      </button>
     </form>
   );
 }
