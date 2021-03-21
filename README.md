@@ -8,11 +8,6 @@ A serverless video conferencing app using Twilio Functions.
 
 ## Technology Stack
 
-### Server
-
 - Twilio Functions
 - Node.js
-
-### Client
-
 - React
