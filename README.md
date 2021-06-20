@@ -13,6 +13,6 @@ A serverless video conferencing app using Twilio Functions and the Twilio Video 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org/)
 
-## Author
+## Developer
 
 [Christopher Najafi](https://www.chrisnajafi.com/)
